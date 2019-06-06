@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/CommuteZ/static/css/main.2cce8147.chunk.css",
+    "main.js": "/CommuteZ/static/js/main.1665f8f1.chunk.js",
+    "main.js.map": "/CommuteZ/static/js/main.1665f8f1.chunk.js.map",
+    "runtime~main.js": "/CommuteZ/static/js/runtime~main.3e47994b.js",
+    "runtime~main.js.map": "/CommuteZ/static/js/runtime~main.3e47994b.js.map",
+    "static/js/2.b41502e9.chunk.js": "/CommuteZ/static/js/2.b41502e9.chunk.js",
+    "static/js/2.b41502e9.chunk.js.map": "/CommuteZ/static/js/2.b41502e9.chunk.js.map",
+    "index.html": "/CommuteZ/index.html",
+    "precache-manifest.e19d3c9966d564bb4aee4dc5c03846e2.js": "/CommuteZ/precache-manifest.e19d3c9966d564bb4aee4dc5c03846e2.js",
+    "service-worker.js": "/CommuteZ/service-worker.js",
+    "static/css/main.2cce8147.chunk.css.map": "/CommuteZ/static/css/main.2cce8147.chunk.css.map",
+    "static/media/logo.svg": "/CommuteZ/static/media/logo.5d5d9eef.svg"
+  }
+}
