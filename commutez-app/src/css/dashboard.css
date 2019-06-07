@@ -1,0 +1,30 @@
+.dashboard__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.dashboard__buttons > div {
+  display: flex;
+  flex-basis: calc(50% - 40px);
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.dashboard__action {
+  text-align: center;
+}
+
+button {
+  background: beige;
+  height: 48px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+span {
+  font-weight: 700;
+  font-size: 18px;
+
+}
