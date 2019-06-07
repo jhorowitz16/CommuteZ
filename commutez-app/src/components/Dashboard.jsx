@@ -2,26 +2,48 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import '../css/dashboard.css';
 
+const NAMES = [
+  "Leaving Home",
+  "At MV Caltrain",
+  "At SF Caltrain",
+  "At Work",
+];
+
 class Dashboard extends Component {
 
   static propTypes = {
   };
 
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      prevClick: null
+    };
+  }
+
+  log(idx) {
+    const self = this;
+    return function() {
+      console.log(idx);
+      console.log(NAMES[idx]);
+      self.prevClick = NAMES[idx];
+    }
+  }
+
   render() {
+    const self = this;
     return (
       <div className='dashboard'>
         <div className='dashboard__buttons'>
-          <div><button><span>Leaving Home</span></button></div>
-          <div><button><span>At MV Caltrain</span></button></div>
-          <div><button><span>At SF Caltrain</span></button></div>
-          <div><button><span>At Work</span></button></div>
+          {[0, 1, 2, 3].map(function(idx){
+            return <div><button onClick={self.log(idx)}><span>{NAMES[idx]}</span></button></div>
+          })}
         </div>
 
         <div className='dashboard__action'>
-          No action
+          {this.state.prevClick || "No Action"}
         </div>
-
-
       </div>
     );
   }
