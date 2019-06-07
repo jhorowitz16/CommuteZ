@@ -41,13 +41,11 @@ class Clock extends Component {
       hour: '2-digit',
       minute:'2-digit',
     });
-    debugger;
     return sol;
 
   }
 
   render() {
-    const self = this;
     return (
       <div className='clock'>
         <h1 className='clock__text'> { this.state.formattedTime } </h1>
