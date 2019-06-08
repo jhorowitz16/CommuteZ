@@ -22,12 +22,18 @@ class Dashboard extends Component {
     };
   }
 
+  shouldComponentUpdate(nextState) {
+    return this.state.prevClick !== nextState.prevClick;
+  }
+
   log(idx) {
     const self = this;
     return function() {
       console.log(idx);
       console.log(NAMES[idx]);
-      self.prevClick = NAMES[idx];
+      self.setState({
+        prevClick: NAMES[idx]
+      });
     }
   }
 
@@ -42,7 +48,7 @@ class Dashboard extends Component {
         </div>
 
         <div className='dashboard__action'>
-          {this.state.prevClick || "No Action"}
+          { this.state.prevClick}
         </div>
       </div>
     );
