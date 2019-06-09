@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/CommuteZ/static/css/main.dc3bfff9.chunk.css",
-    "main.js": "/CommuteZ/static/js/main.2196389e.chunk.js",
-    "main.js.map": "/CommuteZ/static/js/main.2196389e.chunk.js.map",
+    "main.js": "/CommuteZ/static/js/main.3b54cbca.chunk.js",
+    "main.js.map": "/CommuteZ/static/js/main.3b54cbca.chunk.js.map",
     "runtime~main.js": "/CommuteZ/static/js/runtime~main.3e47994b.js",
     "runtime~main.js.map": "/CommuteZ/static/js/runtime~main.3e47994b.js.map",
     "static/js/2.f9339398.chunk.js": "/CommuteZ/static/js/2.f9339398.chunk.js",
     "static/js/2.f9339398.chunk.js.map": "/CommuteZ/static/js/2.f9339398.chunk.js.map",
     "index.html": "/CommuteZ/index.html",
-    "precache-manifest.09338b6a204684196e6309d8ab1ce015.js": "/CommuteZ/precache-manifest.09338b6a204684196e6309d8ab1ce015.js",
+    "precache-manifest.95336833bb12f64374bbadcefe5fbe7e.js": "/CommuteZ/precache-manifest.95336833bb12f64374bbadcefe5fbe7e.js",
     "service-worker.js": "/CommuteZ/service-worker.js",
     "static/css/main.dc3bfff9.chunk.css.map": "/CommuteZ/static/css/main.dc3bfff9.chunk.css.map"
   }
