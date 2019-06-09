@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import '../css/dashboard.css';
+import ReactGA from 'react-ga';
+
 
 const NAMES = [
   "Leaving Home",
@@ -11,12 +13,9 @@ const NAMES = [
 
 class Dashboard extends Component {
 
-  static propTypes = {
-  };
-
-
   constructor(props) {
     super(props);
+    ReactGA.initialize('UA-128940867-3');
     this.state = {
       prevClick: null
     };
@@ -27,6 +26,7 @@ class Dashboard extends Component {
   }
 
   log(idx) {
+    this.sendGA("logTrip", NAMES[idx], new Date().toLocaleString());
     const self = this;
     return function() {
       console.log(idx);
@@ -35,6 +35,15 @@ class Dashboard extends Component {
         prevClick: NAMES[idx]
       });
     }
+  }
+
+  sendGA(eventCategory, eventAction, eventLabel) {
+    debugger;
+    ReactGA.event({
+      category: eventCategory,
+      action: eventAction,
+      label: eventLabel
+    });
   }
 
   render() {
