@@ -5,10 +5,10 @@ import ReactGA from 'react-ga';
 
 
 const NAMES = [
-  "Leaving Home",
-  "At MV Caltrain",
-  "At SF Caltrain",
-  "At Work",
+  "Home",
+  "MV Caltrain",
+  "SF Caltrain",
+  "Work",
 ];
 
 class Dashboard extends Component {
@@ -26,9 +26,9 @@ class Dashboard extends Component {
   }
 
   log(idx) {
-    this.sendGA("logTrip", NAMES[idx], new Date().toLocaleString());
     const self = this;
     return function() {
+      self.sendGA("logLocation", NAMES[idx], new Date().toLocaleString());
       console.log(idx);
       console.log(NAMES[idx]);
       self.setState({
@@ -39,6 +39,7 @@ class Dashboard extends Component {
 
   sendGA(eventCategory, eventAction, eventLabel) {
     debugger;
+    console.log(eventCategory + " " + eventAction + " " + eventLabel);
     ReactGA.event({
       category: eventCategory,
       action: eventAction,
